@@ -7,9 +7,9 @@ const Initiatives = () => {
     return (
         <div className="bg-slate-50 min-h-screen pb-24">
             <div className="relative h-[60vh] overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 bg-slate-900">
+                <div className="absolute inset-0 bg-[#0B0623]">
                     <img src={asanaOrtho} alt="Asana Ortho Clinic" className="w-full h-full object-cover opacity-60" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0B0623]/90"></div>
                 </div>
 
                 <div className="relative z-10 container mx-auto px-4 text-center max-w-4xl pt-20">
@@ -47,8 +47,8 @@ const Initiatives = () => {
                         </div>
                         <div className="p-10">
                             <div className="uppercase tracking-widest text-xs font-bold text-indigo-600 mb-4">Education</div>
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4">BerryNerd Education</h2>
-                            <p className="text-slate-600 mb-8 leading-relaxed">
+                            <h2 className="text-3xl font-bold text-heading mb-4">BerryNerd Education</h2>
+                            <p className="text-body mb-8 leading-relaxed">
                                 An LMS dedicated to orthodontic staff training. From clinical procedures
                                 to front-desk excellence, upskill your team with curated courses from industry leaders.
                             </p>
@@ -67,9 +67,9 @@ const Initiatives = () => {
                             <img src={asanaOrtho} alt="Asana Ortho Interior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="p-10">
-                            <div className="uppercase tracking-widest text-xs font-bold text-teal-600 mb-4">Clinic</div>
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4">Asana Ortho</h2>
-                            <p className="text-slate-600 mb-8 leading-relaxed">
+                            <div className="uppercase tracking-widest text-xs font-bold text-indigo-600 mb-4">Clinic</div>
+                            <h2 className="text-3xl font-bold text-heading mb-4">Asana Ortho</h2>
+                            <p className="text-body mb-8 leading-relaxed">
                                 Our flagship modern practice. We use what we build. Asana Ortho serves as
                                 the testing ground for all BerryStudio innovations before they reach your office.
                             </p>

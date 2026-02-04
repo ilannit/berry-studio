@@ -4,7 +4,7 @@ import { Twitter, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 text-slate-400 border-t border-slate-800 py-12 mt-auto text-sm">
+        <footer className="bg-[#0B0623] text-slate-400 border-t border-white/10 py-12 mt-auto text-sm">
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
                     {/* Brand */}

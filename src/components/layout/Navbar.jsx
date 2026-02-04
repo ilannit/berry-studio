@@ -9,7 +9,7 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const isActive = (path) => {
-        return location.pathname === path ? "text-primary font-semibold" : "text-slate-600 hover:text-primary";
+        return location.pathname === path ? "text-primary font-semibold" : "text-body hover:text-primary";
     };
 
     const navLinks = [
@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/20 bg-white/70 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60">
             <div className="container mx-auto flex h-20 items-center justify-between px-4 max-w-7xl">
-                <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-slate-900">
+                <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-heading">
                     <span className="text-primary">Berry</span>Studio
                 </Link>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </nav>
 
                 <div className="hidden md:flex items-center gap-2">
-                    <Button variant="ghost" className="text-slate-600">Practice Login</Button>
+                    <Button variant="ghost" className="text-body">Practice Login</Button>
                     <Link to="/contact">
                         <Button>Book a Demo</Button>
                     </Link>

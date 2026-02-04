@@ -1,25 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: hsl(175, 100%, 26%);
-  --color-primary-foreground: hsl(210, 40%, 98%);
+  /* Primary - Purple */
+  --color-primary: #7C38F6;
+  --color-primary-foreground: #ffffff;
 
+  /* Secondary */
   --color-secondary: hsl(210, 40%, 96.1%);
-  --color-secondary-foreground: hsl(222.2, 47.4%, 11.2%);
+  --color-secondary-foreground: #0B0623;
 
+  /* Destructive */
   --color-destructive: hsl(0, 100%, 50%);
   --color-destructive-foreground: hsl(210, 40%, 98%);
 
+  /* Muted */
   --color-muted: hsl(210, 40%, 96.1%);
-  --color-muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --color-muted-foreground: #302B44;
 
+  /* Accent */
   --color-accent: hsl(210, 40%, 96.1%);
-  --color-accent-foreground: hsl(222.2, 47.4%, 11.2%);
+  --color-accent-foreground: #0B0623;
 
+  /* Card */
   --color-card: hsl(0, 0%, 100%);
-  --color-card-foreground: hsl(222.2, 84%, 4.9%);
+  --color-card-foreground: #0B0623;
 
   --radius: 0.5rem;
+
+  /* Font Families */
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
 }
 
 :root {
@@ -29,15 +39,21 @@
 
 body {
   background-color: white;
-  color: #0f172a;
-  /* slate-900 */
+  color: #302B44;
+  font-family: 'DM Sans', sans-serif;
 }
 
-/* Custom Mesh Gradient */
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #0B0623;
+}
+
+/* Custom Mesh Gradient - Updated with purple tones */
 .mesh-gradient {
   background-color: #ffffff;
   background-image:
-    radial-gradient(at 40% 20%, hsl(175, 75%, 95%) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, hsl(200, 75%, 95%) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsl(175, 75%, 95%) 0px, transparent 50%);
+    radial-gradient(at 40% 20%, hsl(265, 90%, 97%) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsl(280, 75%, 95%) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsl(265, 75%, 95%) 0px, transparent 50%);
 }

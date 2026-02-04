@@ -14,7 +14,7 @@ const Modules = () => {
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6"
+                        className="text-4xl lg:text-5xl font-bold text-heading mb-6"
                     >
                         A Complete Suite
                     </motion.h1>
@@ -22,7 +22,7 @@ const Modules = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-xl text-slate-600 mb-8"
+                        className="text-xl text-body mb-8"
                     >
                         Everything you need to run a modern orthodontic practice, seamlessly integrated.
                     </motion.p>
@@ -55,8 +55,8 @@ const Modules = () => {
                             <div className="w-16 h-16 bg-blue-100/50 rounded-2xl flex items-center justify-center text-blue-600 mb-8">
                                 <FileText size={32} />
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Berry Forms</h2>
-                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Forms</h2>
+                            <p className="text-lg text-body mb-8 leading-relaxed">
                                 Forget clipboards. Our gamified, mobile-first intake forms delight patients
                                 and automatically sync data to your practice management system. Reduce waiting room bottlenecks and administrative data entry error.
                             </p>
@@ -121,8 +121,8 @@ const Modules = () => {
                             <div className="w-16 h-16 bg-purple-100/50 rounded-2xl flex items-center justify-center text-purple-600 mb-8">
                                 <Activity size={32} />
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Berry Tasks</h2>
-                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Tasks</h2>
+                            <p className="text-lg text-body mb-8 leading-relaxed">
                                 Orchestrate your practice with AI-driven delegation. Berry Tasks intelligently assigns daily duties,
                                 tracks completion, and highlights bottlenecks before they become problems.
                             </p>
@@ -161,8 +161,8 @@ const Modules = () => {
                             <div className="w-16 h-16 bg-purple-100/50 rounded-2xl flex items-center justify-center text-purple-600 mb-8">
                                 <Activity size={32} />
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Berry Plans</h2>
-                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Plans</h2>
+                            <p className="text-lg text-body mb-8 leading-relaxed">
                                 Increase case acceptance with visual treatment plans. Show the "Before & After"
                                 simulations alongside clear financial options, making it easier for patients to say yes.
                             </p>
@@ -200,8 +200,8 @@ const Modules = () => {
                             <div className="w-16 h-16 bg-teal-100/50 rounded-2xl flex items-center justify-center text-teal-600 mb-8">
                                 <CreditCard size={32} />
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Berry Pay & Reports</h2>
-                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Pay & Reports</h2>
+                            <p className="text-lg text-body mb-8 leading-relaxed">
                                 A transparent ledger for patients and powerful analytics for owners.
                                 Track production, collections, and growth in real-time with automated reconciliation.
                             </p>

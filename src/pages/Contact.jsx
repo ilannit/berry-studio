@@ -23,7 +23,7 @@ const Contact = () => {
                             "Q&A with a practice management expert",
                             "Custom pricing proposal based on your size"
                         ].map((item, i) => (
-                            <li key={i} className="flex items-center gap-4 text-lg text-teal-50">
+                            <li key={i} className="flex items-center gap-4 text-lg text-indigo-50">
                                 <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/20 text-white">
                                     <Check size={16} strokeWidth={3} />
                                 </span>
@@ -32,14 +32,14 @@ const Contact = () => {
                         ))}
                     </ul>
 
-                    <div className="bg-teal-800/50 backdrop-blur-md p-8 rounded-2xl border border-teal-500/30">
+                    <div className="bg-indigo-900/40 backdrop-blur-md p-8 rounded-2xl border border-white/20">
                         <div className="flex gap-1 text-yellow-400 mb-4">
                             {[1, 2, 3, 4, 5].map(i => <Star key={i} fill="currentColor" size={16} />)}
                         </div>
-                        <p className="text-lg italic mb-6 text-teal-50">"Switching to BerryStudio added 4 hours back to my week. The automation is real."</p>
+                        <p className="text-lg italic mb-6 text-indigo-50">"Switching to BerryStudio added 4 hours back to my week. The automation is real."</p>
                         <div>
                             <p className="font-bold">Dr. Sarah Chen</p>
-                            <p className="text-sm text-teal-200">Orthodontist, Bright Smiles</p>
+                            <p className="text-sm text-indigo-200">Orthodontist, Bright Smiles</p>
                         </div>
                     </div>
                 </div>
@@ -54,8 +54,8 @@ const Contact = () => {
             >
                 <div className="w-full max-w-lg">
                     <div className="text-center md:text-left mb-8">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-2">Book a Demo</h2>
-                        <p className="text-slate-500">Fill out the form below and we'll be in touch shortly.</p>
+                        <h2 className="text-3xl font-bold text-heading mb-2">Book a Demo</h2>
+                        <p className="text-body">Fill out the form below and we'll be in touch shortly.</p>
                     </div>
 
                     <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>

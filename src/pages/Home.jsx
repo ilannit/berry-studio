@@ -43,14 +43,14 @@ const Home = () => {
                                 Now with AI-powered Scheduling
                             </motion.div>
 
-                            <motion.h1 variants={fadeInUp} className="text-4xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-[1.1]">
+                            <motion.h1 variants={fadeInUp} className="text-4xl lg:text-6xl font-bold tracking-tight text-heading mb-6 leading-[1.1]">
                                 Practice management <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-600">
                                     reimagined with AI
                                 </span>
                             </motion.h1>
 
-                            <motion.p variants={fadeInUp} className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            <motion.p variants={fadeInUp} className="text-lg text-body mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                                 BerryStudio automates the busywork so you can focus on clinical excellence.
                                 Modern, calm, and HIPAA compliant software for the next generation of orthodontists.
                             </motion.p>
@@ -112,8 +112,8 @@ const Home = () => {
             <section className="py-24 bg-white relative">
                 <div className="container mx-auto px-4 max-w-5xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Why BerryStudio?</h2>
-                        <p className="text-slate-600">The clear choice for modern practices.</p>
+                        <h2 className="text-3xl font-bold text-heading mb-4">Why BerryStudio?</h2>
+                        <p className="text-body">The clear choice for modern practices.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
@@ -159,8 +159,8 @@ const Home = () => {
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Everything you need</h2>
-                        <p className="text-slate-600 max-w-xl">
+                        <h2 className="text-3xl font-bold text-heading mb-4">Everything you need</h2>
+                        <p className="text-body max-w-xl">
                             A comprehensive operating system for your practice.
                         </p>
                     </div>
@@ -172,8 +172,8 @@ const Home = () => {
                                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-6">
                                     <FileText />
                                 </div>
-                                <h3 className="text-2xl font-bold mb-3 text-slate-900">Berry Forms</h3>
-                                <p className="text-slate-600 mb-6 flex-grow">Gamified patient intake forms that actually get filled out. Mobile-optimized and automatically synced.</p>
+                                <h3 className="text-2xl font-bold mb-3 text-heading">Berry Forms</h3>
+                                <p className="text-body mb-6 flex-grow">Gamified patient intake forms that actually get filled out. Mobile-optimized and automatically synced.</p>
 
                                 <div className="mt-auto">
                                     <div className="bg-white border border-blue-100 rounded-lg p-4 mb-4 shadow-sm">
@@ -193,8 +193,8 @@ const Home = () => {
                                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-6">
                                     <Activity />
                                 </div>
-                                <h3 className="text-xl font-bold mb-3 text-slate-900">Berry Tasks</h3>
-                                <p className="text-slate-600 mb-6 flex-grow">AI-driven task management for your entire clinical and admin team. Auto-delegation based on role and availability.</p>
+                                <h3 className="text-xl font-bold mb-3 text-heading">Berry Tasks</h3>
+                                <p className="text-body mb-6 flex-grow">AI-driven task management for your entire clinical and admin team. Auto-delegation based on role and availability.</p>
                                 <div className="mt-auto">
                                     <Link to="/modules"><Button variant="link" className="px-0">Learn more <ArrowRight className="ml-2 w-4 h-4" /></Button></Link>
                                 </div>
@@ -207,8 +207,8 @@ const Home = () => {
                                 <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-6">
                                     <CreditCard />
                                 </div>
-                                <h3 className="text-xl font-bold mb-3 text-slate-900">Berry Pay</h3>
-                                <p className="text-slate-600 mb-6 flex-grow">Transparent ledger and automated payment collection. Reduce AR days with smart reminders.</p>
+                                <h3 className="text-xl font-bold mb-3 text-heading">Berry Pay</h3>
+                                <p className="text-body mb-6 flex-grow">Transparent ledger and automated payment collection. Reduce AR days with smart reminders.</p>
                                 <div className="mt-auto">
                                     <Link to="/modules"><Button variant="link" className="px-0">Learn more <ArrowRight className="ml-2 w-4 h-4" /></Button></Link>
                                 </div>
@@ -226,8 +226,8 @@ const Home = () => {
                                         <div className="bg-current rounded-[1px] opacity-50"></div>
                                     </div>
                                 </div>
-                                <h3 className="text-2xl font-bold mb-3 text-slate-900">Berry Plans</h3>
-                                <p className="text-slate-600 mb-6 flex-grow">Visual case presentation tools clearly explained. Increase acceptance rates with interactive simulations.</p>
+                                <h3 className="text-2xl font-bold mb-3 text-heading">Berry Plans</h3>
+                                <p className="text-body mb-6 flex-grow">Visual case presentation tools clearly explained. Increase acceptance rates with interactive simulations.</p>
 
                                 <div className="mt-auto">
                                     <div className="grid grid-cols-2 gap-2 mb-6">
@@ -249,11 +249,11 @@ const Home = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6"
+                        className="text-4xl lg:text-5xl font-bold text-heading mb-6"
                     >
                         Ready to upgrade your practice?
                     </motion.h2>
-                    <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+                    <p className="text-xl text-body mb-10 max-w-2xl mx-auto">
                         Join the forward-thinking orthodontists leading the future with BerryStudio.
                     </p>
                     <Link to="/contact">
