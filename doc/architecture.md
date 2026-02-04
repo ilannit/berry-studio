@@ -10,6 +10,8 @@
 | **Animation** | Framer Motion | Declarative animations for complex scroll reveals. |
 | **Routing** | React Router DOM | Standard SPA client-side routing. |
 | **Icons** | Lucide React | Clean, consistent, medical-appropriate iconography. |
+| **Fonts** | Bricolage Grotesque | Distinctive, modern font used for all headings. |
+| **Fonts** | DM Sans | High-readability font for body text and interactive elements. |
 
 ## Core Patterns
 
@@ -26,7 +28,7 @@ We do not use the raw `shadcn/ui` library dependency, but we follow its pattern 
 
 ### 3. Feature Grid Pattern
 - **Uniform 2x2 Grid**: The main feature section ("Everything you need") uses a balanced 2x2 grid on desktop to emphasize equality across the four main modules (Forms, Tasks, Plans, Pay).
-- **Subtle Tinting**: Each card uses a very subtle background tint (e.g., `bg-blue-50/50`) to differentiate modules while maintaining the "Medical-Grade Calm" palette.
+- **Subtle Tinting**: Each card uses refined background states to differentiate modules while maintaining the premium navy and purple brand identity.
 
 ### 4. Glassmorphism & Gradients
 - We use a custom CSS class `.mesh-gradient` in `index.css` for the hero backgrounds.

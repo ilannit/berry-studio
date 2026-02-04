@@ -7,7 +7,7 @@
 
 ## 👋 Welcome to BerryStudio
 
-BerryStudio is the next-generation marketing website for an AI-powered orthodontic practice management platform. Our design philosophy is **"Medical-Grade Calm"**—clean, trustworthy, and sophisticated.
+BerryStudio is the next-generation marketing website for an AI-powered orthodontic practice management platform. Our design philosophy is **"Premium Clinical Precision"**—a sophisticated blend of high-end aesthetics and medical-grade reliability.
 
 This project is built as a static Single Page Application (SPA) designed to wow enterprise buyers and practice owners.
 

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
 import { cn } from '../../lib/utils';
+import logo from '../../assets/logo.svg';
 
 const Navbar = () => {
     const location = useLocation();
@@ -21,8 +22,8 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-white/20 bg-white/70 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60">
             <div className="container mx-auto flex h-20 items-center justify-between px-4 max-w-7xl">
-                <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-heading">
-                    <span className="text-primary">Berry</span>Studio
+                <Link to="/" className="flex items-center">
+                    <img src={logo} alt="BerryStudio" className="h-8 w-auto" />
                 </Link>
 
                 {/* Desktop Nav */}

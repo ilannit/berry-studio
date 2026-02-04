@@ -36,7 +36,7 @@ We use **Tailwind CSS**.
   // Before
   <div className="bg-blue-500">
   
-  // After (Using our Berry Teal brand color)
+  // After (Using our Berry Purple brand color)
   <div className="bg-primary"> 
   ```
 

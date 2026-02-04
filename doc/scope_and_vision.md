@@ -6,7 +6,7 @@
 ### The "Medical-Grade Calm" Philosophy
 Orthodontic practices are busy. The phone is ringing, patients are waiting, and insurance claims are piling up. Our software (and this website) exists to be the antidote to that stress.
 
-- **Visuals**: We use soft teal/blue gradients, generous whitespace, and rounded corners to evoke safety and cleanliness.
+- **Visuals**: We use sophisticated purple accents, deep navy backgrounds (`#0B0623`), and a premium mesh gradient to evoke a sense of high-end clinical precision and modern innovation.
 - **Microcopy**: We speak professionally but warm. No tech jargon ("cloud-native distributed ledger"), but benefit-focused language ("Your data, safe and accessible anywhere").
 
 ## Target Audience

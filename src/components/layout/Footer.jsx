@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Twitter, Linkedin, Facebook } from 'lucide-react';
+import logoWhite from '../../assets/logo-white.svg';
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
                     {/* Brand */}
                     <div>
-                        <span className="text-xl font-bold text-white block mb-2 tracking-tight">BerryStudio</span>
+                        <img src={logoWhite} alt="BerryStudio" className="h-8 w-auto mb-4" />
                         <p className="text-slate-500">Practice management reimagined.</p>
                     </div>
 
