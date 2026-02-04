@@ -39,7 +39,22 @@ We do not use the raw `shadcn/ui` library dependency, but we follow its pattern 
 - `src/lib/utils.js`: Contains the `cn()` helper. extensive usage of this is required whenever you accept a `className` prop.
 
 ## Deployment
-This project is continuously deployed via **Vercel**. 
-- **Production URL**: [https://berry-studio-sigma.vercel.app](https://berry-studio-sigma.vercel.app)
-- **Workflow**: Pushing to the `main` branch or running `vercel --prod` triggers a production build.
-- **Static Site**: The `npm run build` command generates a `dist/` folder containing optimized HTML/CSS/JS assets.
+
+This project uses **GitHub + Vercel** for continuous deployment.
+
+| Resource | URL |
+|----------|-----|
+| **GitHub Repo** | [github.com/ilannit/berry-studio](https://github.com/ilannit/berry-studio) |
+| **Production** | [berry-studio-sigma.vercel.app](https://berry-studio-sigma.vercel.app) |
+
+### CI/CD Workflow
+1. Push code to `main` branch on GitHub
+2. Vercel automatically detects the push
+3. Build runs (`npm run build`)
+4. If successful, deploys to production
+
+### Manual Deployment (CLI)
+```bash
+vercel --prod  # Deploy current state to production
+```
+

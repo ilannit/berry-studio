@@ -9,7 +9,7 @@ Welcome to the team! This guide will take you from zero to shipping code on Berr
 ## Installation
 1.  **Clone the repository**:
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/ilannit/berry-studio.git
     cd berry-studio
     ```
 

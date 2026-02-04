@@ -2,7 +2,8 @@
 
 > **Status**: v1.0 (Handover Ready)  
 > **Tech Stack**: React, Vite, Tailwind CSS (v4), Framer Motion  
-> **Live Site**: [https://berry-studio-sigma.vercel.app](https://berry-studio-sigma.vercel.app)
+> **GitHub**: [github.com/ilannit/berry-studio](https://github.com/ilannit/berry-studio)  
+> **Live Site**: [berry-studio-sigma.vercel.app](https://berry-studio-sigma.vercel.app)
 
 ## 👋 Welcome to BerryStudio
 
