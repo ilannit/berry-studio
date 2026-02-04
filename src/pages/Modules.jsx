@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { FileText, Activity, CreditCard, ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import mobileForms from '../assets/mobile-forms.png';
+import tasksMock from '../assets/tasks-mock.png';
+import plansMock from '../assets/plans-mock.png';
+import analyticsMock from '../assets/analytics-mock.png';
 
 const Modules = () => {
     return (
@@ -91,23 +94,8 @@ const Modules = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="relative rounded-2xl overflow-hidden bg-purple-50 h-[400px] flex items-center justify-center border border-purple-100">
-                                {/* Placeholder for Task UI */}
-                                <div className="absolute inset-x-8 inset-y-12 bg-white rounded-xl shadow-lg p-6 space-y-4">
-                                    <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
-                                        <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600/80 font-bold text-xs">AI</div>
-                                        <div className="flex-1">
-                                            <div className="h-2 w-24 bg-slate-200 rounded"></div>
-                                        </div>
-                                        <div className="h-6 w-16 bg-green-100 rounded-full"></div>
-                                    </div>
-                                    {[1, 2, 3].map(i => (
-                                        <div key={i} className="flex items-center gap-4 py-2">
-                                            <div className="w-5 h-5 rounded border border-slate-300"></div>
-                                            <div className="h-2 w-full bg-slate-100 rounded"></div>
-                                        </div>
-                                    ))}
-                                </div>
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-purple-100 bg-white p-2">
+                                <img src={tasksMock} alt="Berry Tasks Orchestration" className="w-full h-auto rounded-xl" />
                             </div>
                         </motion.div>
 
@@ -145,9 +133,8 @@ const Modules = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="relative rounded-2xl overflow-hidden bg-slate-100 h-[400px] flex items-center justify-center border border-slate-200">
-                                <p className="text-slate-400 font-mono text-sm">[Treatment Plan Interactive UI Placeholder]</p>
-                                <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-blue-500/10 mix-blend-multiply"></div>
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white p-2">
+                                <img src={plansMock} alt="Treatment Planning UI" className="w-full h-auto rounded-xl" />
                             </div>
                         </motion.div>
 
@@ -185,8 +172,8 @@ const Modules = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="relative rounded-2xl overflow-hidden bg-slate-900 h-[400px] flex items-center justify-center border border-slate-800 shadow-xl">
-                                <p className="text-slate-500 font-mono text-sm">[Dark Mode Analytics UI Placeholder]</p>
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-900 p-2">
+                                <img src={analyticsMock} alt="Financial Analytics Dashboard" className="w-full h-auto rounded-xl" />
                             </div>
                         </motion.div>
 
@@ -197,7 +184,7 @@ const Modules = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="w-16 h-16 bg-teal-100/50 rounded-2xl flex items-center justify-center text-teal-600 mb-8">
+                            <div className="w-16 h-16 bg-purple-100/50 rounded-2xl flex items-center justify-center text-purple-600 mb-8">
                                 <CreditCard size={32} />
                             </div>
                             <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Pay & Reports</h2>
