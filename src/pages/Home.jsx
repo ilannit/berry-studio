@@ -5,6 +5,10 @@ import { Check, ArrowRight, Activity, FileText, CreditCard } from 'lucide-react'
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import dashboardHero from '../assets/dashboard-hero.png';
+import mobileForms from '../assets/mobile-forms.png';
+import tasksMock from '../assets/tasks-mock.png';
+import plansMock from '../assets/plans-mock.png';
+import analyticsMock from '../assets/analytics-mock.png';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -155,89 +159,92 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Bento Grid Features */}
+            {/* Features Section - Refactored Layout */}
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4 max-w-7xl">
-                    <div className="mb-16">
-                        <h2 className="text-3xl font-bold text-heading mb-4">Everything you need</h2>
-                        <p className="text-body max-w-xl">
-                            A comprehensive operating system for your practice.
+                    <div className="mb-20 text-center max-w-3xl mx-auto">
+                        <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Everything you need</h2>
+                        <p className="text-xl text-body">
+                            A complete operating system for the modern orthodontic practice.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {/* Berry Forms */}
-                        <Card className="bg-blue-50/50 border-blue-100 h-full" hoverable>
-                            <div className="flex flex-col h-full">
-                                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-6">
-                                    <FileText />
-                                </div>
-                                <h3 className="text-2xl font-bold mb-3 text-heading">Berry Forms</h3>
-                                <p className="text-body mb-6 flex-grow">Gamified patient intake forms that actually get filled out. Mobile-optimized and automatically synced.</p>
-
-                                <div className="mt-auto">
-                                    <div className="bg-white border border-blue-100 rounded-lg p-4 mb-4 shadow-sm">
-                                        {/* Abstract UI representation simplified */}
-                                        <div className="h-2 w-1/2 bg-slate-100 rounded mb-2"></div>
-                                        <div className="h-2 w-3/4 bg-slate-100 rounded mb-2"></div>
-                                        <div className="h-8 w-24 bg-blue-500 rounded mt-2 opacity-20"></div>
-                                    </div>
-                                    <Link to="/modules"><Button variant="link" className="px-0">Learn more <ArrowRight className="ml-2 w-4 h-4" /></Button></Link>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+                        {/* Berry Plans */}
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">BerryPlans</h3>
+                                <p className="text-lg text-body text-slate-600">Case acceptance tool originally reimagined for millennials</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-purple-50 to-white border border-purple-100 shadow-xl shadow-purple-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
+                                    <img
+                                        src={plansMock}
+                                        alt="BerryPlans Interface"
+                                        className="w-full h-auto rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-105"
+                                    />
                                 </div>
                             </div>
-                        </Card>
+                        </div>
+
+                        {/* Berry Forms */}
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">BerryForms</h3>
+                                <p className="text-lg text-body text-slate-600">Gamified forms patients love to fill</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-xl shadow-blue-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
+                                    <img
+                                        src={mobileForms}
+                                        alt="BerryForms Mobile Interface"
+                                        className="w-full h-auto max-w-[300px] rounded-2xl shadow-lg transform transition-transform duration-700 group-hover:-rotate-2 group-hover:scale-105"
+                                    />
+                                </div>
+                            </div>
+                        </div>
 
                         {/* Berry Tasks */}
-                        <Card className="bg-purple-50/50 border-purple-100 h-full" hoverable>
-                            <div className="flex flex-col h-full">
-                                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-6">
-                                    <Activity />
-                                </div>
-                                <h3 className="text-xl font-bold mb-3 text-heading">Berry Tasks</h3>
-                                <p className="text-body mb-6 flex-grow">AI-driven task management for your entire clinical and admin team. Auto-delegation based on role and availability.</p>
-                                <div className="mt-auto">
-                                    <Link to="/modules"><Button variant="link" className="px-0">Learn more <ArrowRight className="ml-2 w-4 h-4" /></Button></Link>
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">BerryTasks</h3>
+                                <p className="text-lg text-body text-slate-600">AI-driven orchestration for your clinical team</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-purple-50/50 to-indigo-50/50 border border-indigo-100 shadow-xl shadow-indigo-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
+                                    <img
+                                        src={tasksMock}
+                                        alt="BerryTasks Interface"
+                                        className="w-full h-auto rounded-xl shadow-lg transform transition-transform duration-700 group-hover:translate-y-[-10px]"
+                                    />
                                 </div>
                             </div>
-                        </Card>
+                        </div>
 
                         {/* Berry Pay */}
-                        <Card className="bg-teal-50/50 border-teal-100 h-full" hoverable>
-                            <div className="flex flex-col h-full">
-                                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-6">
-                                    <CreditCard />
-                                </div>
-                                <h3 className="text-xl font-bold mb-3 text-heading">Berry Pay</h3>
-                                <p className="text-body mb-6 flex-grow">Transparent ledger and automated payment collection. Reduce AR days with smart reminders.</p>
-                                <div className="mt-auto">
-                                    <Link to="/modules"><Button variant="link" className="px-0">Learn more <ArrowRight className="ml-2 w-4 h-4" /></Button></Link>
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">BerryPay</h3>
+                                <p className="text-lg text-body text-slate-600">Automated collections and financial health</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl shadow-black/10 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
+                                    <img
+                                        src={analyticsMock}
+                                        alt="BerryPay Analytics Interface"
+                                        className="w-full h-auto rounded-xl shadow-2xl opacity-90 transition-opacity duration-500 group-hover:opacity-100"
+                                    />
                                 </div>
                             </div>
-                        </Card>
+                        </div>
+                    </div>
 
-                        {/* Berry Plans - Converted to Light Theme to match others */}
-                        <Card className="bg-slate-50/50 border-slate-200 h-full" hoverable>
-                            <div className="flex flex-col h-full">
-                                <div className="w-12 h-12 bg-slate-200 rounded-lg flex items-center justify-center text-slate-700 mb-6">
-                                    <div className="grid grid-cols-2 gap-0.5 w-5 h-5">
-                                        <div className="bg-current rounded-[1px]"></div>
-                                        <div className="bg-current rounded-[1px]"></div>
-                                        <div className="bg-current rounded-[1px]"></div>
-                                        <div className="bg-current rounded-[1px] opacity-50"></div>
-                                    </div>
-                                </div>
-                                <h3 className="text-2xl font-bold mb-3 text-heading">Berry Plans</h3>
-                                <p className="text-body mb-6 flex-grow">Visual case presentation tools clearly explained. Increase acceptance rates with interactive simulations.</p>
-
-                                <div className="mt-auto">
-                                    <div className="grid grid-cols-2 gap-2 mb-6">
-                                        <div className="h-16 bg-slate-200 rounded-lg"></div>
-                                        <div className="h-16 bg-slate-200 rounded-lg"></div>
-                                    </div>
-                                    <Button variant="outline" className="w-full">See Examples</Button>
-                                </div>
-                            </div>
-                        </Card>
+                    <div className="mt-20 text-center">
+                        <Link to="/modules">
+                            <Button variant="outline" size="lg" className="rounded-full px-8">
+                                Explore all features <ArrowRight className="ml-2 w-4 h-4" />
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>
