@@ -27,8 +27,8 @@ We do not use the raw `shadcn/ui` library dependency, but we follow its pattern 
 - **Why?** This gives you (the developer) total control over the code. You are expected to modify these files directly if the design system evolves.
 
 ### 3. Feature Grid Pattern
-- **Uniform 2x2 Grid**: The main feature section ("Everything you need") uses a balanced 2x2 grid on desktop to emphasize equality across the four main modules (Forms, Tasks, Plans, Pay).
-- **Subtle Tinting**: Each card uses refined background states to differentiate modules while maintaining the premium navy and purple brand identity.
+- **Text-Above-Visual Layout**: The homepage features section uses a grid where typography sits *above* large, graphical mockups. This establishes context before showing the proof.
+- **Glassmorphism Containers**: Assets are housed in distinct, rounded containers with soft brand-colored gradients and shadows (`shadow-purple-900/5`), creating a premium "device on glass" aesthetic.
 
 ### 4. Glassmorphism & Gradients
 - We use a custom CSS class `.mesh-gradient` in `index.css` for the hero backgrounds.
