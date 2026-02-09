@@ -9,6 +9,8 @@ import mobileForms from '../assets/mobile-forms.png';
 import tasksMock from '../assets/tasks-mock.png';
 import plansMock from '../assets/plans-mock.png';
 import analyticsMock from '../assets/analytics-mock.png';
+import reportsMock from '../assets/reports-mock.png';
+import nerdMock from '../assets/nerd-mock.png';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -44,19 +46,18 @@ const Home = () => {
                         >
                             <motion.div variants={fadeInUp} className="inline-flex items-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-sm font-medium text-primary mb-6">
                                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
-                                Now with AI-powered Scheduling
+                                Now serving US and Canada
                             </motion.div>
 
                             <motion.h1 variants={fadeInUp} className="text-4xl lg:text-6xl font-bold tracking-tight text-heading mb-6 leading-[1.1]">
-                                Practice management <br />
+                                The Easiest New Patient <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-600">
-                                    reimagined with AI
+                                    Intake Tool Alive
                                 </span>
                             </motion.h1>
 
                             <motion.p variants={fadeInUp} className="text-lg text-body mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                                BerryStudio automates the busywork so you can focus on clinical excellence.
-                                Modern, calm, and HIPAA compliant software for the next generation of orthodontists.
+                                BerryStudio allows independent dental providers to welcome patients with the most convenient experience and highest efficiency.
                             </motion.p>
 
                             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -74,7 +75,7 @@ const Home = () => {
 
                             <motion.div variants={fadeInUp} className="mt-8 flex items-center justify-center lg:justify-start gap-8 text-slate-400 grayscale opacity-70">
                                 {/* Trusted By Logos Placeholder */}
-                                <span>Trusted by 500+ Practices</span>
+                                <span>Trusted by 50+ Practices</span>
                             </motion.div>
                         </motion.div>
 
@@ -98,7 +99,7 @@ const Home = () => {
                                         <Activity size={20} />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-slate-500">Revenue Growth</p>
+                                        <p className="text-xs text-slate-500">At-home contracts</p>
                                         <p className="text-sm font-bold text-slate-900">+24% this month</p>
                                     </div>
                                 </motion.div>
@@ -117,7 +118,7 @@ const Home = () => {
                 <div className="container mx-auto px-4 max-w-5xl">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-heading mb-4">Why BerryStudio?</h2>
-                        <p className="text-body">The clear choice for modern practices.</p>
+                        <p className="text-body">As convenient as paper-workflows | On your PC</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
@@ -127,7 +128,7 @@ const Home = () => {
                         >
                             <h3 className="text-xl font-semibold text-slate-500 mb-6">The Old Way</h3>
                             <ul className="space-y-4">
-                                {['Clunky, dated interfaces', 'Expensive server maintenance', 'Disjointed 3rd party tools', 'Slow support response'].map((item, i) => (
+                                {['High processing fee for cards', 'Multiple steps; less accountability', 'Designed for paper or iPads', 'Clutter on the screen'].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-slate-500">
                                         <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-200 text-slate-500 text-xs font-bold">✕</span>
                                         {item}
@@ -145,7 +146,7 @@ const Home = () => {
                             </div>
                             <h3 className="text-xl font-semibold text-primary mb-6">The Berry Way</h3>
                             <ul className="space-y-4">
-                                {['Modern, intuitive AI interface', 'Secure Cloud-Native (AWS)', 'All-in-one suite', 'Dedicated Success Manager'].map((item, i) => (
+                                {['0% added fees for card transactions', 'Automate steps; track everything', 'Designed for the mobile phones', 'Clean, intuitive interfaces'].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-slate-800 font-medium">
                                         <span className="flex items-center justify-center w-6 h-6 rounded-full bg-teal-100 text-primary text-xs font-bold">
                                             <Check size={14} />
@@ -163,35 +164,18 @@ const Home = () => {
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="mb-20 text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Everything you need</h2>
+                        <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Everything You Need</h2>
                         <p className="text-xl text-body">
-                            A complete operating system for the modern orthodontic practice.
+                            Your staff’s efficiency is as good as the software you give them. Raise the bar with BerryStudio.
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-                        {/* Berry Plans */}
-                        <div className="group">
-                            <div className="mb-6">
-                                <h3 className="text-3xl font-bold text-heading mb-2">BerryPlans</h3>
-                                <p className="text-lg text-body text-slate-600">Case acceptance tool originally reimagined for millennials</p>
-                            </div>
-                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-purple-50 to-white border border-purple-100 shadow-xl shadow-purple-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
-                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
-                                    <img
-                                        src={plansMock}
-                                        alt="BerryPlans Interface"
-                                        className="w-full h-auto rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-105"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Berry Forms */}
                         <div className="group">
                             <div className="mb-6">
-                                <h3 className="text-3xl font-bold text-heading mb-2">BerryForms</h3>
-                                <p className="text-lg text-body text-slate-600">Gamified forms patients love to fill</p>
+                                <h3 className="text-3xl font-bold text-heading mb-2">Berry Forms</h3>
+                                <p className="text-lg text-body text-slate-600">Gamified mobile friendly forms patients love to fill</p>
                             </div>
                             <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-xl shadow-blue-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
                                 <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
@@ -204,11 +188,28 @@ const Home = () => {
                             </div>
                         </div>
 
+                        {/* Berry Plans */}
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">Berry Plans</h3>
+                                <p className="text-lg text-body text-slate-600">The only case acceptance tool that combines patient education with payments</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-purple-50 to-white border border-purple-100 shadow-xl shadow-purple-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
+                                    <img
+                                        src={plansMock}
+                                        alt="BerryPlans Interface"
+                                        className="w-full h-auto rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
                         {/* Berry Tasks */}
                         <div className="group">
                             <div className="mb-6">
-                                <h3 className="text-3xl font-bold text-heading mb-2">BerryTasks</h3>
-                                <p className="text-lg text-body text-slate-600">AI-driven orchestration for your clinical team</p>
+                                <h3 className="text-3xl font-bold text-heading mb-2">Berry Tasks</h3>
+                                <p className="text-lg text-body text-slate-600">Visual task management for all your workflows</p>
                             </div>
                             <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-purple-50/50 to-indigo-50/50 border border-indigo-100 shadow-xl shadow-indigo-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
                                 <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
@@ -224,8 +225,8 @@ const Home = () => {
                         {/* Berry Pay */}
                         <div className="group">
                             <div className="mb-6">
-                                <h3 className="text-3xl font-bold text-heading mb-2">BerryPay</h3>
-                                <p className="text-lg text-body text-slate-600">Automated collections and financial health</p>
+                                <h3 className="text-3xl font-bold text-heading mb-2">Berry Pay</h3>
+                                <p className="text-lg text-body text-slate-600">0% processing fee and automated ledgers</p>
                             </div>
                             <div className="rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl shadow-black/10 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
                                 <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px]">
@@ -233,6 +234,40 @@ const Home = () => {
                                         src={analyticsMock}
                                         alt="BerryPay Analytics Interface"
                                         className="w-full h-auto rounded-xl shadow-2xl opacity-90 transition-opacity duration-500 group-hover:opacity-100"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Berry Reports */}
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">Berry Reports</h3>
+                                <p className="text-lg text-body text-slate-600">Manage what you measure with intuitive reports</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-teal-50 to-sky-50 border border-teal-100 shadow-xl shadow-teal-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px] overflow-hidden">
+                                    <img
+                                        src={reportsMock}
+                                        alt="Berry Reports Interface"
+                                        className="w-full h-auto rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-105 object-left-top object-cover scale-110"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Berry Nerd */}
+                        <div className="group">
+                            <div className="mb-6">
+                                <h3 className="text-3xl font-bold text-heading mb-2">Berry Nerd</h3>
+                                <p className="text-lg text-body text-slate-600">Bring your SOPs to life with AI search</p>
+                            </div>
+                            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-indigo-50 to-violet-50 border border-indigo-100 shadow-xl shadow-indigo-900/5 transition-all duration-500 hover:shadow-2xl hover:scale-[1.01]">
+                                <div className="p-8 sm:p-12 flex items-center justify-center min-h-[400px] overflow-hidden">
+                                    <img
+                                        src={nerdMock}
+                                        alt="Berry Nerd Interface"
+                                        className="w-full h-auto rounded-xl shadow-lg transform transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
                             </div>
@@ -258,14 +293,14 @@ const Home = () => {
                         viewport={{ once: true }}
                         className="text-4xl lg:text-5xl font-bold text-heading mb-6"
                     >
-                        Ready to upgrade your practice?
+                        Ready to start more patients?
                     </motion.h2>
                     <p className="text-xl text-body mb-10 max-w-2xl mx-auto">
-                        Join the forward-thinking orthodontists leading the future with BerryStudio.
+                        Join the forward-thinking dentists leading the future with BerryStudio
                     </p>
                     <Link to="/contact">
                         <Button size="lg" className="h-14 px-10 text-lg rounded-full shadow-xl shadow-primary/20 hover:scale-105 transition-transform duration-300">
-                            Get Started Today
+                            Get Started today
                         </Button>
                     </Link>
                 </div>

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FileText, Activity, CreditCard, ArrowRight } from 'lucide-react';
+import { FileText, Activity, CreditCard, ArrowRight, BarChart, Brain } from 'lucide-react';
 import Button from '../components/ui/Button';
 import mobileForms from '../assets/mobile-forms.png';
 import tasksMock from '../assets/tasks-mock.png';
 import plansMock from '../assets/plans-mock.png';
 import analyticsMock from '../assets/analytics-mock.png';
+import reportsMock from '../assets/reports-mock.png';
+import nerdMock from '../assets/nerd-mock.png';
 
 const Modules = () => {
     return (
@@ -63,18 +65,6 @@ const Modules = () => {
                                 Forget clipboards. Our gamified, mobile-first intake forms delight patients
                                 and automatically sync data to your practice management system. Reduce waiting room bottlenecks and administrative data entry error.
                             </p>
-                            <ul className="space-y-4 mb-8">
-                                {[
-                                    "Mobile-first design for patient convenience",
-                                    "Real-time writeback to PMS",
-                                    "Automated insurance verification steps"
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
-                                        <span className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-xs">✓</span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
                             <Link to="/products/forms">
                                 <Button size="lg" variant="outline">Learn more about forms <ArrowRight className="ml-2 w-4 h-4" /></Button>
                             </Link>
@@ -83,7 +73,7 @@ const Modules = () => {
                 </div>
             </section>
 
-            {/* Feature: Tasks - INSERTED HERE */}
+            {/* Feature 2: Tasks */}
             <section className="py-24 bg-white border-y border-slate-100 overflow-hidden">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -122,13 +112,13 @@ const Modules = () => {
                 </div>
             </section>
 
-            {/* Feature 2: Plans */}
-            <section className="py-24 bg-white border-y border-slate-100 overflow-hidden">
+            {/* Feature 3: Plans */}
+            <section className="py-24 overflow-hidden">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <motion.div
-                            className="flex-1"
-                            initial={{ opacity: 0, x: -50 }}
+                            className="flex-1 lg:order-last"
+                            initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
@@ -140,7 +130,7 @@ const Modules = () => {
 
                         <motion.div
                             className="flex-1"
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
@@ -161,13 +151,13 @@ const Modules = () => {
                 </div>
             </section>
 
-            {/* Feature 3: Pay */}
-            <section className="py-24 overflow-hidden">
+            {/* Feature 4: Pay */}
+            <section className="py-24 bg-white border-y border-slate-100 overflow-hidden">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="flex flex-col lg:flex-row items-center gap-16">
                         <motion.div
-                            className="flex-1 lg:order-last"
-                            initial={{ opacity: 0, x: 50 }}
+                            className="flex-1"
+                            initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
@@ -179,21 +169,99 @@ const Modules = () => {
 
                         <motion.div
                             className="flex-1"
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <div className="w-16 h-16 bg-teal-100/50 rounded-2xl flex items-center justify-center text-teal-600 mb-8">
+                                <CreditCard size={32} />
+                            </div>
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Pay</h2>
+                            <p className="text-lg text-body mb-8 leading-relaxed">
+                                A transparent ledger for patients. Automated collections, recurring payments, and a
+                                modern checkout experience that patients trust.
+                            </p>
+                            <Link to="/products/pay">
+                                <Button size="lg" variant="outline">View payment features <ArrowRight className="ml-2 w-4 h-4" /></Button>
+                            </Link>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Feature 5: Reports */}
+            <section className="py-24 overflow-hidden">
+                <div className="container mx-auto px-4 max-w-7xl">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <motion.div
+                            className="flex-1 lg:order-last"
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-indigo-200 bg-white p-2">
+                                <img src={reportsMock} alt="Reports Dashboard" className="w-full h-auto rounded-xl object-left-top object-cover" />
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="flex-1"
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="w-16 h-16 bg-purple-100/50 rounded-2xl flex items-center justify-center text-purple-600 mb-8">
-                                <CreditCard size={32} />
+                            <div className="w-16 h-16 bg-indigo-100/50 rounded-2xl flex items-center justify-center text-indigo-600 mb-8">
+                                <BarChart size={32} />
                             </div>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Pay & Reports</h2>
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Reports</h2>
                             <p className="text-lg text-body mb-8 leading-relaxed">
-                                A transparent ledger for patients and powerful analytics for owners.
-                                Track production, collections, and growth in real-time with automated reconciliation.
+                                Powerful analytics for owners. Track production, collections, and growth in real-time.
+                                Turn data into actionable insights to grow your practice.
                             </p>
-                            <Link to="/products/pay">
-                                <Button size="lg" variant="outline">View analytics <ArrowRight className="ml-2 w-4 h-4" /></Button>
+                            <Link to="/products/reports">
+                                <Button size="lg" variant="outline">Explore reports <ArrowRight className="ml-2 w-4 h-4" /></Button>
+                            </Link>
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Feature 6: Nerd */}
+            <section className="py-24 bg-white border-y border-slate-100 overflow-hidden">
+                <div className="container mx-auto px-4 max-w-7xl">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <motion.div
+                            className="flex-1"
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-violet-200 bg-white p-2">
+                                <img src={nerdMock} alt="Berry Nerd AI" className="w-full h-auto rounded-xl" />
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="flex-1"
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <div className="w-16 h-16 bg-violet-100/50 rounded-2xl flex items-center justify-center text-violet-600 mb-8">
+                                <Brain size={32} />
+                            </div>
+                            <h2 className="text-3xl lg:text-4xl font-bold text-heading mb-6">Berry Nerd</h2>
+                            <p className="text-lg text-body mb-8 leading-relaxed">
+                                Bring your SOPs to life with AI search. An intelligent assistant that helps your
+                                team find protocols, scripts, and answers instantly.
+                            </p>
+                            <Link to="/products/nerd">
+                                <Button size="lg" variant="outline">Meet Berry Nerd <ArrowRight className="ml-2 w-4 h-4" /></Button>
                             </Link>
                         </motion.div>
                     </div>

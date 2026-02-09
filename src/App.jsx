@@ -12,6 +12,8 @@ import BerryForms from './pages/products/BerryForms';
 import BerryPlans from './pages/products/BerryPlans';
 import BerryTasks from './pages/products/BerryTasks';
 import BerryPay from './pages/products/BerryPay';
+import BerryReports from './pages/products/BerryReports';
+import BerryNerd from './pages/products/BerryNerd';
 
 // Company
 import About from './pages/company/About';
@@ -36,6 +38,8 @@ function App() {
           <Route path="/products/plans" element={<BerryPlans />} />
           <Route path="/products/tasks" element={<BerryTasks />} />
           <Route path="/products/pay" element={<BerryPay />} />
+          <Route path="/products/reports" element={<BerryReports />} />
+          <Route path="/products/nerd" element={<BerryNerd />} />
 
           {/* Company */}
           <Route path="/company/about" element={<About />} />
