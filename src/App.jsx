@@ -22,9 +22,13 @@ import Careers from './pages/company/Careers';
 // Legal
 import { Privacy, Terms, Hipaa } from './pages/legal/Legal';
 
+// Utils
+import ScrollToTop from './components/utils/ScrollToTop';
+
 function App() {
   return (
     <div className="flex flex-col min-h-screen font-sans antialiased text-slate-900 bg-white">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
         <Routes>
